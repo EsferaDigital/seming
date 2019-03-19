@@ -1,12 +1,13 @@
 .Header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: capa(capa10);
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // z-index: capa(capa10);
   width: 100%;
   height: $altura-header;
   line-height: $altura-header;
-  border-bottom: 1px solid black;
+  background-color: color(background-header);
+  // border-bottom: 1px solid black;
   &-container{
     position: relative;
     margin: 0 auto;
@@ -98,7 +99,7 @@
   padding-top: $altura-header;
   text-align: center;
   height: 100vh;
-  background: red;
+  background: color(secondary);
   @include mq(md){
     width: 100%;
     padding-top: 0;

@@ -1,1 +1,83 @@
-main.main
+main.Main
+  .Main-container
+    section.Banner-inicio
+      .Banner-inicio-img
+        img(src="img/banner-inicio.jpg", alt="Banner-inicio")
+      .Banner-inicio-text
+        p INTEGRIDAD - EXCELENCIA
+        p CONFIANZA - EFICIENCIA
+    section.Descripcion-inicio
+      .Descripcion-inicio-text
+        p Somos una empresa dedicada a la ingeniería, fabricación y montaje de estructuras metálicas para proyectos industriales, habitacionales, de refuerzos y soportes especiales relacionado a clientes o intermediarios de estas áreas en todo el país.
+        p Nuestro compromiso es ofrecer un servicio de alto nivel, basado en una combinación de calidad consistente y eficiencia operacional con la orientación de lograr la satisfacción y recomendación permanente de nuestros clientes.
+    section.Iconos-inicio
+      .Iconos-inicio-gallery
+        .Iconos-inicio-card
+          .Iconos-inicio-card-img
+            img(src="img/capital-humano.png", alt="Capital Humano")
+          .Iconos-inicio-card-text
+            h4 CAPITAL HUMANO
+            p CAPACITADO Y CERTIFICADO
+        .Iconos-inicio-card
+          .Iconos-inicio-card-img
+            img(src="img/procesos.png", alt="Procesos")
+          .Iconos-inicio-card-text
+            h4 PROCESOS
+            p ESTANDARIZADOS Y CERTIFICADOS
+        .Iconos-inicio-card
+          .Iconos-inicio-card-img
+            img(src="img/servicio.png", alt="Servicio")
+          .Iconos-inicio-card-text
+            h4 SERVICIO PERSONALIZADO
+            p EN TIEMPO, FONDO Y FORMA
+        .Iconos-inicio-card
+          .Iconos-inicio-card-img
+            img(src="img/post-venta.png", alt="Post Venta")
+          .Iconos-inicio-card-text
+            h4 POST VENTA
+            p GARANTIZADA
+    section.Obras-inicio
+      h2 NUESTRAS OBRAS
+      .Obras-gallery
+        .Obras-inicio-card
+          .Obras-inicio-card-img
+            img(src="img/obras-inicio1.jpg", alt="Seming Construcción")
+        .Obras-inicio-card
+          .Obras-inicio-card-img
+            img(src="img/obras-inicio2.jpg", alt="Seming Montaje")
+        .Obras-inicio-card
+          .Obras-inicio-card-img
+            img(src="img/obras-inicio3.jpg", alt="Seming Seguridad")
+      .Obras-inicio-btn
+        button VER NUESTRAS OBRAS
+          span
+            i(class="fas fa-arrow-right")
+    section.Contactanos-inicio
+      .Contactanos-inicio-container
+        h4 CONTÁCTANOS
+        p Visítanos en nuestras oficinas en Las Encinas 1392, Lampa o envíenos un mensaje y lo contactaremos.
+        p Encuéntranos también en:
+        .Contactanos-inicio-btn
+          button.Habitissimo
+          button.Linkedin
+    section.Formulario-inicio
+      .Formulario-inicio-content
+        form(action="enviar.php" id="inicioForm" name="inicioForm" method="POST" class="Form-inicio")
+          .Form-inicio-item
+            label(for="nombre") NOMBRE COMPLETO
+            input(type="text" id="name" name="name" class="Form-inicio-input")
+            span.SpanUser
+              i(class="fas fa-user")
+          .Form-inicio-item
+            label(for="email") E-MAIL
+            input(type="email" id="email" name="email" class="Form-inicio-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+          .Form-inicio-item
+            label(for="message") MENSAJE
+            textarea(id="message" name="message" class="Form-inicio-input")
+          .Form-inicio-item
+            button(type="submit" id="btnSend" name="send" value="send") ENVIAR
+              span
+                i(class="fas fa-arrow-right")
+    section.Maps-inicio
+      .Maps-inicio-img
+        img(src="img/maps.jpg" alt="Mapa")

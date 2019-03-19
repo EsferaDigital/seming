@@ -110,7 +110,7 @@ gulp.task('uniquejs', ['lint'], () => {
 
 // 7° Toma todas la imagenes, las optimiza y las envía a la carpeta public
 
-gulp.task('imagemin', function () {
+gulp.task('img', function () {
 	return gulp.src('./src/img/*.*')
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(imagemin(imageminOptions))
@@ -128,7 +128,7 @@ gulp.task('server', function () {
 	gulp.watch('./src/pug/*/*.pug', ['pug2html']).on("change", server.reload)
 	gulp.watch('./src/scss/*/*.scss', ['sass', 'cache']).on("change", server.reload)
   gulp.watch('./src/js/*/*.js', ['globaljs', 'uniquejs', 'cache']).on("change", server.reload)
-	gulp.watch('./src/img/*.*', ['imagemin']).on("change", server.reload)
+	gulp.watch('./src/img/*.*', ['img']).on("change", server.reload)
 });
 
 // 9° Pone en ejecución toda la programación al comando gulp por consola
