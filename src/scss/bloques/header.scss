@@ -1,3 +1,140 @@
-.header{
-	background-color: red;
+.Header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: capa(capa10);
+  width: 100%;
+  height: $altura-header;
+  line-height: $altura-header;
+  border-bottom: 1px solid black;
+  &-container{
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    @include mq(md){
+      display: flex;
+    }
+  }
+}
+
+.Logo{
+  position: absolute;
+  z-index: capa(capa10);
+  transform: translate3d(10px, 50px, 0);
+  @include mq(md){
+    position: static;
+    width: 40%;
+  }
+  & a{
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all .3s ease;
+    &:hover{
+      opacity: .75;
+    }
+  }
+  & img{
+    padding: .5rem;
+    width: auto;
+    height: $altura-header;
+  }
+}
+
+.Panel{
+  position: fixed;
+  z-index: capa(9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow-y: auto;
+  transition: transform .3s ease;
+  // De arriba
+  // transform: translate(0, -100%);
+  // // De la izquierda
+  // transform: translate(-100%, 0);
+  // // De abajo
+  // transform: translate(0, 100%);
+  // De la derecha
+  transform: translate(100%, 0);
+  @include mq(md){
+    position: static;
+    width: 60%;
+    display: flex;
+    overflow-y: visible;
+    background-color: transparent;
+    transform: translate(0,0);
+  }
+  &.is-active{
+    transform: translate(0,0);
+  }
+  &-btn{
+    position: absolute;
+    z-index: capa(capa10);
+    top: -.5rem;
+    right: 0;
+    @include mq(md){
+      display: none;
+    }
+  }
+}
+
+.hamburger{
+  &:focus{
+    outline: 0;
+    border: 0;
+  }
+  // Para pintar la hamburger
+  &-inner,
+  &-inner:after,
+  &-inner:before{
+    background-color: black !important;
+  }
+}
+
+.Menu{
+  margin: 0 auto;
+  padding-top: $altura-header;
+  text-align: center;
+  height: 100vh;
+  background: red;
+  @include mq(md){
+    width: 100%;
+    padding-top: 0;
+    height: $altura-header;
+    background: transparent;
+  }
+  & ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  & ul:not(.sub-menu){
+    @include mq(md){
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+  & li{
+    margin-left: 0;
+  }
+  & a{
+    display: block;
+    font-size: 1.5rem;
+    font-family: $fuente-titulos;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+    @include mq(md){
+      padding: 0 .5rem;
+      font-size: 1.5rem;
+    }
+  }
+  & a:hover{
+    color: color(kingfisher);
+    @include mq(md){
+      // color: white;
+    }
+  }
 }

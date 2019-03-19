@@ -27,16 +27,13 @@ h6, small{font-size: .75rem;}
 
 // Importar Tipografía
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
-
-$primary-font: 'Roboto', sans-serif;
-$secondary-font: 'Open Sans', sans-serif;
+$fuente-titulos: 'Open Sans', sans-serif;
 
 html {
-  font-family: $primary-font;
+  font-family: $fuente-titulos;
   font-size: $font-root;
 }
 
 body{
-  font-family: $primary-font;
+  font-family: $fuente-titulos;
 }

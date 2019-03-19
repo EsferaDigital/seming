@@ -14,7 +14,7 @@
 
  //Para obtener variables z-index
 
- @function z-index($capa){
+ @function capa($capa){
    @return map-get($capas, $capa);
  }
 
