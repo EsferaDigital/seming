@@ -1,0 +1,29 @@
+section.Contactanos-inicio
+  .Contactanos-inicio-container
+    h4 CONTÁCTANOS
+    p Visítanos en nuestras oficinas en Las Encinas 1392, Lampa o envíenos un mensaje y lo contactaremos.
+    p Encuéntranos también en:
+    .Contactanos-inicio-btn
+      button.Habitissimo
+      button.Linkedin
+section.Formulario-inicio
+  .Formulario-inicio-content
+    form(action="enviar.php" id="inicioForm" name="inicioForm" method="POST" class="Form-inicio")
+      .Form-inicio-item
+        label(for="nombre") NOMBRE COMPLETO
+        input(type="text" id="name" name="name" class="Form-inicio-input")
+        span.SpanUser
+          i(class="fas fa-user")
+      .Form-inicio-item
+        label(for="email") E-MAIL
+        input(type="email" id="email" name="email" class="Form-inicio-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+      .Form-inicio-item
+        label(for="message") MENSAJE
+        textarea(id="message" name="message" class="Form-inicio-input")
+      .Form-inicio-item
+        button(type="submit" id="btnSend" name="send" value="send") ENVIAR
+          span
+            i(class="fas fa-arrow-right")
+section.Maps-inicio
+  .Maps-inicio-img
+    img(src="img/maps.jpg" alt="Mapa")

@@ -65,3 +65,28 @@
     @include btn(color(cta), 1rem, color(primary));
   }
 }
+
+// Botones Seming
+
+@mixin boton-link{
+  background-color: color(secondary);
+  width: 100%;
+  max-width: 17rem;
+  color: white;
+  border: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .1rem;
+  position: relative;
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  outline: transparent;
+  transition: background-color .3s;
+  &:hover{
+    background-color: color(capa);
+  }
+  &:active{
+    transform: scale(.95);
+  }
+}

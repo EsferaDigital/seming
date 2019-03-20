@@ -142,18 +142,7 @@
   margin: 1rem auto 2rem;
   text-align: center;
   & button{
-    background-color: color(secondary);
-    width: 100%;
-    max-width: 17rem;
-    color: white;
-    border: transparent;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: .1rem;
-    position: relative;
-    padding: .5rem 1rem;
-    border-radius: 5rem;
-    cursor: pointer;
+    @include boton-link;
     & span{
       position: absolute;
       right: 5%;
@@ -223,11 +212,11 @@
 }
 
 .Formulario-inicio{
-  border: 1px solid red;
+  // border: 1px solid red;
   background-color: color(background-formulario);
   padding: 2rem 0;
   &-content{
-    width: 90%;
+    width: 85%;
     margin: auto;
   }
 }
@@ -235,17 +224,40 @@
 .Form-inicio{
   // border: 2px solid green;
   &-item{
-    border: 1px solid blue;
+    // border: 1px solid blue;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2,minmax(min-content, max-content));
     position: relative;
+    & label{
+      font-size: 12px;
+      padding: 3px;
+    }
+    & input, textarea{
+      border: transparent;
+      border-radius: 3px;
+      margin-bottom: .5rem;
+      padding: .5rem;
+      outline-color: color(text-footer);
+    }
+    & textarea{
+      height: 8rem;
+      margin-bottom: 1.2rem;
+    }
+    & button{
+      @include boton-link;
+      max-width: 100%;
+      & span{
+        position: absolute;
+        right: 5%;
+      }
+    }
   }
 }
 
 .SpanUser{
   position: absolute;
-  top: 57%;
-  left: 7px;
+  top: 45%;
+  left: 10px;
   color: color(icons);
 }
