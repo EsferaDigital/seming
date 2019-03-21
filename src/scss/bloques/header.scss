@@ -110,11 +110,9 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-  }
-  & ul:not(.sub-menu){
     @include mq(md){
       flex-direction: row;
-      justify-content: space-evenly;
+      border: 1px solid red;
     }
   }
   & li{
@@ -129,7 +127,8 @@
     transition: all .3s ease;
     @include mq(md){
       padding: 0 .5rem;
-      font-size: 1.5rem;
+      font-size: 14px;
+      color: color(text);
     }
   }
   & a:hover{
