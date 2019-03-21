@@ -1,0 +1,111 @@
+.Contactanos{
+  background-color: color(background-sociales);
+  color: white;
+  &-container{
+    // border: 2px solid red;
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+    & h4{
+      padding: .5rem 0;
+      font-family: $fuente-especial;
+      font-style: normal;
+      font-size: 20px;
+      letter-spacing: .1rem;
+      font-weight: 500;
+    }
+    & p{
+      font-size: 14px;
+    }
+    & p:nth-child(odd){
+      margin: 1.5rem auto;
+    }
+  }
+}
+
+.Contactanos-btn{
+  // border: 1px solid red;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  & button{
+    background-color: color(background-sociales);
+    width: 48%;
+    height: 2.3rem;
+    max-width: 17rem;
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .1rem;
+    padding: .5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+  }
+}
+
+.Habitissimo{
+  background-image: img('habiti.svg');
+  background-position: center 40%;
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.Linkedin{
+  background-image: img('ico-linkedin.png');
+  background-position: center center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.Formulario{
+  // border: 1px solid red;
+  background-color: color(background-formulario);
+  padding: 2rem 0;
+  &-content{
+    width: 85%;
+    margin: auto;
+  }
+}
+
+.Form{
+  // border: 2px solid green;
+  &-item{
+    // border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,minmax(min-content, max-content));
+    position: relative;
+    & label{
+      font-size: 12px;
+      padding: 3px;
+    }
+    & input, textarea{
+      border: transparent;
+      border-radius: 3px;
+      margin-bottom: .5rem;
+      padding: .5rem;
+      outline-color: color(text-footer);
+    }
+    & textarea{
+      height: 8rem;
+      margin-bottom: 1.2rem;
+    }
+    & button{
+      @include boton-link;
+      max-width: 100%;
+      & span{
+        position: absolute;
+        right: 5%;
+      }
+    }
+  }
+}
+
+.SpanUser{
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  color: color(icons);
+}

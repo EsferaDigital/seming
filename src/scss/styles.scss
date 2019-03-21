@@ -18,10 +18,14 @@
 
 // secciones
 
+@import "secciones/cont-form-map.scss";
+@import "secciones/main-inicio.scss";
+@import "secciones/main-obras.scss";
+@import "secciones/main-somos.scss";
+
 // Bloques
 
 @import "bloques/header.scss";
-@import "bloques/main.scss";
 @import "bloques/footer.scss";
 
 // Paginas
