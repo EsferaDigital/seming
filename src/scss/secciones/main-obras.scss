@@ -1,0 +1,100 @@
+.root{
+  // border: 2px solid red;
+  padding: 4rem 0;
+  & h2{
+    @include sub-titulos;
+  }
+}
+
+.Gallery-obras{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr;
+  @include mq(md){
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+  &-item{
+    position: relative;
+    border-bottom: 1px solid #c4c4c4;
+    &:hover .Gallery-obras-item-text-hover{
+      transform: scale3d(1,1,1);
+    }
+    &:hover .Gallery-obras-item-text{
+      background-color: color(secondary);
+      & h4, p{
+        color: white;
+      }
+    }
+    &-img img{
+      display: block;
+    }
+    &-text{
+      position: relative;
+      z-index: capa(capa3);
+      text-align: center;
+      padding: .5rem 0;
+      & h4, p{
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        transition: all .5s;
+      }
+      & h4{
+        margin-bottom: .5rem;
+      }
+    }
+  }
+  &-item-text-hover{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    background: color(capaT);
+    transform: scale3d(1,0,1);
+    transition: transform .5s;
+    & p{
+      width: 90%;
+      margin: auto;
+      color: white;
+      text-align: center;
+    }
+  }
+}
+
+.Lema-obras{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  &-banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1 / 3;
+    grid-column: 1;
+    & img{
+      display: block;
+    }
+  }
+  &-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1 / 3;
+    grid-column: 1;
+    background-color: color(capaT);
+    & p{
+      color: white;
+      font-weight: bold;
+      font-size: 9px;
+    }
+    // & p:first-child{
+    //   padding-bottom: .3rem;
+    // }
+  }
+}
