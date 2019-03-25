@@ -1,11 +1,29 @@
+.Cont-form-map{
+  border: 2px solid red;
+  display: grid;
+  @include mq(md){
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr minmax(min-content, max-content);
+  }
+}
+
 .Contactanos{
   background-color: color(background-sociales);
   color: white;
+  @include mq(md){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
   &-container{
     // border: 2px solid red;
-    width: 90%;
+    width: 85%;
     margin: auto;
-    padding: 2rem 0;
+    @include mq(md){
+      width: 70%;
+    }
     & h4{
       padding: .5rem 0;
       font-family: $fuente-especial;
@@ -63,9 +81,18 @@
   // border: 1px solid red;
   background-color: color(background-formulario);
   padding: 2rem 0;
+  @include mq(md){
+    padding: 3rem 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
   &-content{
     width: 85%;
     margin: auto;
+    // border: 1px solid green;
+    @include mq(md){
+      width: 70%;
+    }
   }
 }
 
@@ -108,4 +135,11 @@
   top: 45%;
   left: 10px;
   color: color(icons);
+}
+
+.Maps{
+  @include mq(md){
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
 }

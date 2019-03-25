@@ -6,11 +6,12 @@ main.Main
       .Banner-inicio-text
         p INTEGRIDAD - EXCELENCIA
         p CONFIANZA - EFICIENCIA
-    section.Descripcion-inicio
+    .Container-layout
+      section.Descripcion-inicio
       .Descripcion-inicio-text
         p Somos una empresa dedicada a la ingeniería, fabricación y montaje de estructuras metálicas para proyectos industriales, habitacionales, de refuerzos y soportes especiales relacionado a clientes o intermediarios de estas áreas en todo el país.
         p Nuestro compromiso es ofrecer un servicio de alto nivel, basado en una combinación de calidad consistente y eficiencia operacional con la orientación de lograr la satisfacción y recomendación permanente de nuestros clientes.
-    section.Iconos-inicio
+      section.Iconos-inicio
       .Iconos-inicio-gallery
         .Iconos-inicio-card
           .Iconos-inicio-card-img
@@ -36,20 +37,26 @@ main.Main
           .Iconos-inicio-card-text
             h4 POST VENTA
             p GARANTIZADA
-    section.Obras-inicio
+      section.Obras-inicio
       h2 NUESTRAS OBRAS
       .Obras-gallery
         .Obras-inicio-card
-          .Obras-inicio-card-img
-            img(src="img/obras-inicio1.jpg", alt="Seming Construcción")
+          .Obras-inicio-card-item
+            picture.Obras-inicio-card-item-picture
+              source(media="(min-width: 600px )", srcset="img/obras-inicio1-large.jpg")
+              img(src="img/obras-inicio1.jpg", alt="Seming Construcción")
         .Obras-inicio-card
-          .Obras-inicio-card-img
-            img(src="img/obras-inicio2.jpg", alt="Seming Montaje")
+          .Obras-inicio-card-item
+            picture.Obras-inicio-card-item-picture
+              source(media="(min-width: 600px )", srcset="img/obras-inicio2-large.jpg")
+              img(src="img/obras-inicio2.jpg", alt="Seming Montaje")
         .Obras-inicio-card
-          .Obras-inicio-card-img
-            img(src="img/obras-inicio3.jpg", alt="Seming Seguridad")
+          .Obras-inicio-card-item
+            picture.Obras-inicio-card-item-picture
+              source(media="(min-width: 600px )", srcset="img/obras-inicio3-large.jpg")
+              img(src="img/obras-inicio3.jpg", alt="Seming Seguridad")
       .Obras-inicio-btn
-        button VER NUESTRAS OBRAS
+        a(href=link.nuestrasObras) VER NUESTRAS OBRAS
           span
             i(class="fas fa-arrow-right")
     include cont-form-map

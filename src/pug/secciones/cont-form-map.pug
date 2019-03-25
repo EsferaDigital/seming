@@ -1,29 +1,30 @@
-section.Contactanos
-  .Contactanos-container
-    h4 CONTÁCTANOS
-    p Visítanos en nuestras oficinas en Las Encinas 1392, Lampa o envíenos un mensaje y lo contactaremos.
-    p Encuéntranos también en:
-    .Contactanos-btn
-      button.Habitissimo
-      button.Linkedin
-section.Formulario
-  .Formulario-content
-    form(action="enviar.php" id="Form" name="inicioForm" method="POST" class="Form")
-      .Form-item
-        label(for="nombre") NOMBRE COMPLETO
-        input(type="text" id="name" name="name" class="Form-input")
-        span.SpanUser
-          i(class="fas fa-user")
-      .Form-item
-        label(for="email") E-MAIL
-        input(type="email" id="email" name="email" class="Form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
-      .Form-item
-        label(for="message") MENSAJE
-        textarea(id="message" name="message" class="Form-input")
-      .Form-item
-        button(type="submit" id="btnSend" name="send" value="send") ENVIAR
-          span
-            i(class="fas fa-arrow-right")
-section.Maps
-  .Maps-img
-    .Mapa#Mapa
+.Cont-form-map
+  section.Contactanos
+    .Contactanos-container
+      h4 CONTÁCTANOS
+      p Visítanos en nuestras oficinas en Las Encinas 1392, Lampa o envíenos un mensaje y lo contactaremos.
+      p Encuéntranos también en:
+      .Contactanos-btn
+        button.Habitissimo
+        button.Linkedin
+  section.Formulario
+    .Formulario-content
+      form(action="enviar.php" id="Form" name="inicioForm" method="POST" class="Form")
+        .Form-item
+          label(for="nombre") NOMBRE COMPLETO
+          input(type="text" id="name" name="name" class="Form-input")
+          span.SpanUser
+            i(class="fas fa-user")
+        .Form-item
+          label(for="email") E-MAIL
+          input(type="email" id="email" name="email" class="Form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+        .Form-item
+          label(for="message") MENSAJE
+          textarea(id="message" name="message" class="Form-input")
+        .Form-item
+          button(type="submit" id="btnSend" name="send" value="send") ENVIAR
+            span
+              i(class="fas fa-arrow-right")
+  section.Maps
+    .Maps-img
+      .Mapa#Mapa

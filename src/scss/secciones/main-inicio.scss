@@ -31,6 +31,10 @@
   }
 }
 
+.Container-layout{
+  border: 2px solid red;
+}
+
 .Descripcion-inicio{
   // border: 1px solid green;
   width: 90%;
@@ -90,8 +94,13 @@
 
 .Obras-inicio{
   // border: 2px solid green;
+  margin: auto;
+  @include mq(md){
+    max-width: $ancho-maximo;
+  }
   & h2{
     @include sub-titulos;
+    // border: 2px solid red;
   }
 }
 
@@ -99,12 +108,51 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
+  // border: 2px solid green;
+  justify-content: center;
+  @include mq(md){
+    grid-gap: 1.3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+  }
+}
+
+.Obras-inicio-card:first-child{
+  // border: 2px solid red;
+  @include mq(md){
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.Obras-inicio-card:nth-child(2){
+  // border: 2px solid yellow;
+  @include mq(md){
+    grid-column: 2 /3;
+    grid-row: 1 / 3;
+  }
+}
+
+.Obras-inicio-card:nth-child(3){
+  // border: 2px solid purple;
+  @include mq(md){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
 
 .Obras-inicio-card{
-  // border: 1px solid greenyellow;
-  &-img img{
+  &-item-picture{
     display: block;
+    width: auto;
+    height: 100%;
+    margin: auto;
+  }
+  &-item-picture img{
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: auto;
   }
 }
 
@@ -113,11 +161,14 @@
   width: 85%;
   margin: 1rem auto 2rem;
   text-align: center;
-  & button{
+  & a{
     @include boton-link;
+    padding-left: 2rem;
+    padding-right: 3rem;
     & span{
       position: absolute;
       right: 5%;
+      top: .5rem;
     }
   }
 }
