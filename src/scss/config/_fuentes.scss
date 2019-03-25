@@ -50,18 +50,18 @@ body{
   padding: 1rem 0;
   font-weight: 500;
   position: relative;
-  z-index: capa(capa3);
+  z-index: 1;
   &:before{
     content: "";
     position: absolute;
     top: 50%;
-    left: 5%;
-    z-index: 1;
-    width: 15%;
+    left: 0;
+    z-index: -1;
+    width: 4rem;
     height: 1px;
     background-color: #c4c4c4;
     @include mq(md){
-      left: 0;
+      // left: 0;
       width: 40%;
     }
   }
@@ -69,13 +69,13 @@ body{
     content: "";
     position: absolute;
     top: 50%;
-    right: 5%;
-    z-index: 1;
-    width: 15%;
+    right: 0;
+    z-index: -1;
+    width: 4rem;
     height: 1px;
     background-color: #c4c4c4;
     @include mq(md){
-      right: 0;
+      // right: 0;
       width: 40%;
     }
   }

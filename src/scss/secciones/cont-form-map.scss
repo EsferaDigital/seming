@@ -1,5 +1,5 @@
 .Cont-form-map{
-  border: 2px solid red;
+  // border: 2px solid red;
   display: grid;
   @include mq(md){
     grid-template-columns: 1fr 1fr;
@@ -20,7 +20,7 @@
   &-container{
     // border: 2px solid red;
     width: 85%;
-    margin: auto;
+    margin: 2rem auto;
     @include mq(md){
       width: 70%;
     }
@@ -47,7 +47,7 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
-  & button{
+  & a{
     background-color: color(background-sociales);
     width: 48%;
     height: 2.3rem;
@@ -143,3 +143,27 @@
     grid-row: 2 / 3;
   }
 }
+
+.Mapa{
+  position: relative;
+  & a{
+    display: block;
+    & img{
+      display: block;
+    }
+  }
+  & .Link-mapa{
+    position: absolute;
+    display: block;
+    color: color(text-footer);
+    z-index: capa(capa1);
+    text-align: center;
+    width: 10rem;
+    margin: auto;
+    top: 45%;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid color(text-footer);
+  }
+}
+

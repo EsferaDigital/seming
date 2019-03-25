@@ -7,12 +7,15 @@
   height: $altura-header;
   line-height: $altura-header;
   background-color: color(background-header);
-  border: 2px solid red;
+  @include mq(mdl){
+    // Esto no está funcionando
+    box-shadow: $shadow-blur;
+  }
   &-container{
     position: relative;
     margin: 0 auto;
     max-width: 100%;
-    @include mq(md){
+    @include mq(mdl){
       display: flex;
     }
   }
@@ -20,9 +23,9 @@
 
 .Logo{
   position: absolute;
-  z-index: capa(capa10);
+  z-index: capa(capa1);
   transform: translate3d(10px, 50px, 0);
-  @include mq(md){
+  @include mq(mdl){
     position: static;
     width: 40%;
   }
@@ -59,7 +62,7 @@
   // transform: translate(0, 100%);
   // De la derecha
   transform: translate(100%, 0);
-  @include mq(md){
+  @include mq(mdl){
     position: static;
     width: 60%;
     display: flex;
@@ -75,7 +78,7 @@
     z-index: capa(capa10);
     top: -.5rem;
     right: 0;
-    @include mq(md){
+    @include mq(mdl){
       display: none;
     }
   }
@@ -100,7 +103,7 @@
   text-align: center;
   height: 100vh;
   background: color(secondary);
-  @include mq(md){
+  @include mq(mdl){
     width: 100%;
     padding-top: 0;
     height: $altura-header;
@@ -110,13 +113,37 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    @include mq(md){
+    @include mq(mdl){
       flex-direction: row;
-      border: 1px solid red;
+      justify-content: flex-end;
+      // border: 1px solid red;
     }
   }
   & li{
     margin-left: 0;
+  }
+  & li:nth-child(2){
+    @include mq(mdl){
+      position: relative;
+    }
+    &::before{
+      @include mq(mdl){
+        position: absolute;
+        content: ".";
+        top: -4px;
+        left: -2px;
+        color: inherit;
+      }
+    }
+    &::after{
+      @include mq(mdl){
+        position: absolute;
+        content: ".";
+        top: -4px;
+        right: -2px;
+        color: inherit;
+      }
+    }
   }
   & a{
     display: block;
@@ -125,16 +152,20 @@
     text-decoration: none;
     color: white;
     transition: all .3s ease;
-    @include mq(md){
+    @include mq(mdl){
       padding: 0 .5rem;
-      font-size: 14px;
+      font-size: 1.3rem;
       color: color(text);
+      // border: 1px solid red;
+    }
+    &:hover{
+      font-weight: 800;
     }
   }
-  & a:hover{
-    color: color(kingfisher);
-    @include mq(md){
-      // color: white;
-    }
-  }
+  // & a:hover{
+  //   color: color(kingfisher);
+  //   @include mq(mdl){
+  //     // color: white;
+  //   }
+  // }
 }
