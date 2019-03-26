@@ -9,7 +9,7 @@
   background-color: color(background-header);
   @include mq(mdl){
     // Esto no está funcionando
-    box-shadow: $shadow-blur;
+    box-shadow: $shadow-flat;
   }
   &-container{
     position: relative;

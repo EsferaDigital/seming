@@ -38,13 +38,13 @@ let onError = function (err) {
 // 1°Toma cualquier archivo pug, lo pasa a html, lo minifica y crea un archivo html en la raíz si este no existe.
 
 gulp.task('pug2html', function buildHTML() {
-	gulp.src('./src/pug/paginas/*.pug')
-		.pipe(pug({
-			pretty: true
-		}))
-		.pipe(gulpPugBeautify({ omit_empty: true }))
-		.pipe(htmlmin({ collapseWhitespace: true })) //Activar para minificar
-		.pipe(gulp.dest('./public/'));
+  gulp.src('./src/pug/paginas/*.pug')
+    .pipe(pug({
+      pretty: true
+    }))
+    .pipe(gulpPugBeautify({ omit_empty: true }))
+    .pipe(htmlmin({ collapseWhitespace: true })) //Activar para minificar
+    .pipe(gulp.dest('./public/'));
 });
 
 // 2° Añade una firma temporal al css y al js para que el navegador los reconozca como archivos nuevos cuando hagamos cambios
