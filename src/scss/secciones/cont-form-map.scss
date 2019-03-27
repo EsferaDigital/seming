@@ -154,12 +154,25 @@
   }
 }
 
+.Form-item:focus-within{
+  & .SpanUser{
+    color: transparent;
+  }
+}
+
 .SpanUser{
   position: absolute;
   top: 45%;
   left: 10px;
   color: color(icons);
 }
+
+// input[type=text]:focus{
+//   background-color: white;
+//   & .SpanUser{
+//     color: transparent;
+//   }
+// }
 
 .Maps{
   @include mq(md){
