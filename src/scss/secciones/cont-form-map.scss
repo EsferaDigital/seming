@@ -18,7 +18,7 @@
     grid-row: 1 / 2;
   }
   &-container{
-    // border: 2px solid red;
+    // border: 1px solid red;
     width: 85%;
     margin: 2rem auto;
     @include mq(md){
@@ -31,12 +31,23 @@
       font-size: 20px;
       letter-spacing: .1rem;
       font-weight: 500;
+      @include mq(mdl){
+        font-size: 34px;
+        padding: 0 0 1rem;
+      }
     }
     & p{
       font-size: 14px;
+      letter-spacing: 0.06rem;
+      @include mq(mdl){
+        font-size: 15px;
+      }
     }
     & p:nth-child(odd){
       margin: 1.5rem auto;
+      @include mq(mdl){
+        margin: 1.5rem auto .5rem;
+      }
     }
   }
 }
@@ -50,7 +61,7 @@
   & a{
     background-color: color(background-sociales);
     width: 48%;
-    height: 2.3rem;
+    height: 2.5rem;
     max-width: 17rem;
     color: white;
     border: 1px solid white;
@@ -60,20 +71,33 @@
     padding: .5rem;
     border-radius: 5rem;
     cursor: pointer;
+    @include mq(md){
+      height: 2.3rem;
+    }
+    @include mq(mdl){
+      height: 2.7rem;
+    }
+    &:hover{
+      background-color: #545454;
+      border: 1px solid #545454;
+    }
   }
 }
 
 .Habitissimo{
   background-image: img('habiti.svg');
-  background-position: center 40%;
+  background-position: center 50%;
   background-size: 75%;
   background-repeat: no-repeat;
+  @include mq(lgm){
+    background-size: 65%;
+  }
 }
 
 .Linkedin{
   background-image: img('ico-linkedin.png');
   background-position: center center;
-  background-size: 60%;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 

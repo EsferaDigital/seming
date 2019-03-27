@@ -1,13 +1,30 @@
 .root{
   // border: 2px solid red;
   padding: 4rem 0;
+  @include mq(lgm){
+    padding: 6rem 0;
+  }
   & h2{
     @include sub-titulos;
+    --ancho: 27%;
+    @include mq(md){
+      --ancho: 32%;
+    }
+    @include mq(lgm){
+      padding: 2rem 0;
+      --ancho: 39%;
+    }
+    &:before{
+      width: var(--ancho);
+    }
+    &:after{
+      width: var(--ancho);
+    }
   }
 }
 
 .Gallery-obras{
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: grid;
   grid-gap: 1.5rem;
@@ -15,6 +32,9 @@
   @include mq(md){
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
+  }
+  @include mq(lgm){
+    margin-top: 1rem;
   }
   &-item{
     position: relative;
@@ -41,6 +61,12 @@
         font-weight: bold;
         letter-spacing: 0.1rem;
         transition: all .5s;
+        @include mq(md){
+          font-size: 12px;
+        }
+        @include mq(lgs){
+          font-size: 16px;
+        }
       }
       & h4{
         margin-bottom: .5rem;
@@ -92,6 +118,12 @@
       color: white;
       font-weight: bold;
       font-size: 9px;
+      @include mq(md){
+        font-size: 11px;
+      }
+      @include mq(lgs){
+        font-size: 14px;
+      }
     }
     // & p:first-child{
     //   padding-bottom: .3rem;

@@ -1,7 +1,7 @@
 import toggleNav from '../dev/toggle-nav';
 import mapa from '../dev/mapa';
-import BannerInicio from '../dev/banner_inicio';
+// import BannerInicio from '../dev/banner_inicio';
 
 toggleNav()
-BannerInicio()
+// BannerInicio()
 mapa()

@@ -47,7 +47,7 @@
 }
 
 .Container-layout{
-  @include mq(md){
+  @include mq(mdl){
     // border: 2px solid red;
     width: 80%;
     margin: auto;
@@ -263,7 +263,7 @@
     justify-self: center;
     grid-row: 1;
     grid-column: 1;
-    grid-gap: .5rem;
+    grid-gap: 1rem;
     transform: translateY(-15px);
     & h2{
       color: white;

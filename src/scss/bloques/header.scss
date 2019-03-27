@@ -7,16 +7,16 @@
   height: $altura-header;
   line-height: $altura-header;
   background-color: color(background-header);
+  box-shadow: $shadow-flat;
   @include mq(mdl){
     padding: 0 10%;
     margin: auto;
-    box-shadow: $shadow-flat;
   }
   &-container{
     position: relative;
     margin: 0 auto;
     max-width: 100%;
-    @include mq(mdl){
+    @include mq(lgs){
       display: flex;
     }
   }
@@ -41,8 +41,12 @@
     width: auto;
     height: $altura-header;
     transition: box-shadow .3s;
-    @include mq(mdl){
+    @include mq(lgs){
       width: 30%;
+      height: auto;
+    }
+    @include mq(lgm){
+      width: 27%;
       height: auto;
     }
     &:hover{
@@ -89,7 +93,7 @@
   // transform: translate(0, 100%);
   // De la derecha
   transform: translate(100%, 0);
-  @include mq(mdl){
+  @include mq(lgs){
     position: static;
     width: 60%;
     display: flex;
@@ -105,7 +109,7 @@
     z-index: capa(capa10);
     top: -.5rem;
     right: 0;
-    @include mq(mdl){
+    @include mq(lgs){
       display: none;
     }
   }
@@ -117,7 +121,7 @@
   text-align: center;
   height: 100vh;
   background: color(secondary);
-  @include mq(mdl){
+  @include mq(lgs){
     width: 100%;
     padding-top: 0;
     height: $altura-header;
@@ -127,7 +131,7 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    @include mq(mdl){
+    @include mq(lgs){
       flex-direction: row;
       justify-content: flex-end;
       // border: 1px solid red;
@@ -140,11 +144,11 @@
     }
   }
   & li:nth-child(2){
-    @include mq(mdl){
+    @include mq(lgs){
       position: relative;
     }
     &::before{
-      @include mq(mdl){
+      @include mq(lgs){
         position: absolute;
         content: ".";
         top: -4px;
@@ -156,7 +160,7 @@
       }
     }
     &::after{
-      @include mq(mdl){
+      @include mq(lgs){
         position: absolute;
         content: ".";
         top: -4px;
@@ -175,13 +179,13 @@
     text-decoration: none;
     color: white;
     transition: all .3s ease;
-    @include mq(mdl){
+    @include mq(lgs){
       padding: 0 .5rem;
       font-size: 1rem;
       color: color(text);
       // border: 1px solid red;
     }
-    @include mq(lgs){
+    @include mq(lgm){
       font-size: 1.3rem;
     }
     &:hover{
