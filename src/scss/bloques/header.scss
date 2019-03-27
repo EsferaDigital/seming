@@ -8,7 +8,8 @@
   line-height: $altura-header;
   background-color: color(background-header);
   @include mq(mdl){
-    // Esto no está funcionando
+    padding: 0 10%;
+    margin: auto;
     box-shadow: $shadow-flat;
   }
   &-container{
@@ -22,12 +23,14 @@
 }
 
 .Logo{
+  // border: 1px solid green;
   position: absolute;
   z-index: capa(capa1);
   transform: translate3d(10px, 50px, 0);
   @include mq(mdl){
     position: static;
-    width: 40%;
+    width: 50%;
+    transform: translate3d(0, 50px, 0);
   }
   & a{
     font-size: 2rem;
@@ -38,11 +41,35 @@
     width: auto;
     height: $altura-header;
     transition: box-shadow .3s;
+    @include mq(mdl){
+      width: 30%;
+      height: auto;
+    }
     &:hover{
       box-shadow: $shadow-flat;
     }
   }
 }
+
+
+.hamburger{
+  &:focus{
+    outline: 0;
+    border: 0;
+  }
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+  background-color: black;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after{
+  background-color: white;
+}
+
+
 
 .Panel{
   position: fixed;
@@ -84,19 +111,6 @@
   }
 }
 
-.hamburger{
-  &:focus{
-    outline: 0;
-    border: 0;
-  }
-  // Para pintar la hamburger
-  &-inner,
-  &-inner:after,
-  &-inner:before{
-    background-color: black !important;
-  }
-}
-
 .Menu{
   margin: 0 auto;
   padding-top: $altura-header;
@@ -121,6 +135,9 @@
   }
   & li{
     margin-left: 0;
+    @include mq(lgs){
+      margin-left: .5rem;
+    }
   }
   & li:nth-child(2){
     @include mq(mdl){
@@ -133,6 +150,9 @@
         top: -4px;
         left: -2px;
         color: inherit;
+        @include mq(lgs){
+          left: -5px;
+        }
       }
     }
     &::after{
@@ -142,6 +162,9 @@
         top: -4px;
         right: -2px;
         color: inherit;
+        @include mq(lgs){
+          right: -5px;
+        }
       }
     }
   }
@@ -154,18 +177,15 @@
     transition: all .3s ease;
     @include mq(mdl){
       padding: 0 .5rem;
-      font-size: 1.3rem;
+      font-size: 1rem;
       color: color(text);
       // border: 1px solid red;
+    }
+    @include mq(lgs){
+      font-size: 1.3rem;
     }
     &:hover{
       font-weight: 800;
     }
   }
-  // & a:hover{
-  //   color: color(kingfisher);
-  //   @include mq(mdl){
-  //     // color: white;
-  //   }
-  // }
 }

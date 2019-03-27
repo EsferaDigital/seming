@@ -3,37 +3,38 @@ main.Main
     section.Banner-inicio#BannerInicio
     .Container-layout
       section.Descripcion-inicio
-      .Descripcion-inicio-text
-        p Somos una empresa dedicada a la ingeniería, fabricación y montaje de estructuras metálicas para proyectos industriales, habitacionales, de refuerzos y soportes especiales relacionado a clientes o intermediarios de estas áreas en todo el país.
-        p Nuestro compromiso es ofrecer un servicio de alto nivel, basado en una combinación de calidad consistente y eficiencia operacional con la orientación de lograr la satisfacción y recomendación permanente de nuestros clientes.
+        .Descripcion-inicio-text
+          p Somos una empresa dedicada a la ingeniería, fabricación y montaje de estructuras metálicas para proyectos industriales, habitacionales, de refuerzos y soportes especiales relacionado a clientes o intermediarios de estas áreas en todo el país.
+          p Nuestro compromiso es ofrecer un servicio de alto nivel, basado en una combinación de calidad consistente y eficiencia operacional con la orientación de lograr la satisfacción y recomendación permanente de nuestros clientes.
       section.Iconos-inicio
         .Iconos-inicio-gallery
           .Iconos-inicio-card
             .Iconos-inicio-card-img
               img(src="img/capital-humano.png", alt="Capital Humano")
-            .Iconos-inicio-card-text
+            .Iconos-inicio-card-text.Movido1
               h4 CAPITAL HUMANO
               p CAPACITADO Y CERTIFICADO
           .Iconos-inicio-card
             .Iconos-inicio-card-img
               img(src="img/procesos.png", alt="Procesos")
-            .Iconos-inicio-card-text
+            .Iconos-inicio-card-text.Movido2
               h4 PROCESOS
               p ESTANDARIZADOS Y CERTIFICADOS
           .Iconos-inicio-card
             .Iconos-inicio-card-img
               img(src="img/servicio.png", alt="Servicio")
-            .Iconos-inicio-card-text
+            .Iconos-inicio-card-text.Movido3
               h4 SERVICIO PERSONALIZADO
               p EN TIEMPO, FONDO Y FORMA
           .Iconos-inicio-card
             .Iconos-inicio-card-img
               img(src="img/post-venta.png", alt="Post Venta")
-            .Iconos-inicio-card-text
+            .Iconos-inicio-card-text.Movido4
               h4 POST VENTA
               p GARANTIZADA
       section.Obras-inicio
-        h2 NUESTRAS OBRAS
+        h2.Obras-inicio-title NUESTRAS OBRAS
+        #obrasInicioBanner.Obras-inicio-banner
         .Obras-gallery
           .Obras-inicio-card
             .Obras-inicio-card-item
@@ -50,8 +51,8 @@ main.Main
               picture.Obras-inicio-card-item-picture
                 source(media="(min-width: 600px )", srcset="img/obras-inicio3-large.jpg")
                 img(src="img/obras-inicio3.jpg", alt="Seming Seguridad")
-      .Obras-inicio-btn
-        a(href=link.nuestrasObras) VER NUESTRAS OBRAS
-          span
-            i(class="fas fa-arrow-right")
+        .Obras-inicio-btn
+          a(href=link.nuestrasObras) VER NUESTRAS OBRAS
+            span
+              i(class="fas fa-arrow-right")
     include cont-form-map

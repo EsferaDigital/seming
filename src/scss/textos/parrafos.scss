@@ -1,5 +1,10 @@
-@mixin parrafo{
-  font-family: $secondary-font;
-  font-size: 1rem;
-  letter-spacing: 1px;
+@mixin parrafos{
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  @include mq(md){
+    font-size: 14px;
+  }
+  @include mq(lgs){
+    font-size: 1rem;
+  }
 }

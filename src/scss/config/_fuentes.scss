@@ -39,44 +39,4 @@ body{
   font-family: $fuente-titulos;
 }
 
-// Titulos
 
-@mixin sub-titulos{
-  font-family: $fuente-especial;
-  font-style: normal;
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: .1rem;
-  padding: 1rem 0;
-  font-weight: 500;
-  position: relative;
-  z-index: 1;
-  &:before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: -1;
-    width: 4rem;
-    height: 1px;
-    background-color: #c4c4c4;
-    @include mq(md){
-      // left: 0;
-      width: 40%;
-    }
-  }
-  &:after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    z-index: -1;
-    width: 4rem;
-    height: 1px;
-    background-color: #c4c4c4;
-    @include mq(md){
-      // right: 0;
-      width: 40%;
-    }
-  }
-}

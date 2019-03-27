@@ -1,11 +1,48 @@
-@mixin titulo{
-  font-size: 2rem;
-  letter-spacing: 2px;
-  font-family: $primary-font;
-}
-
-@mixin sub-titulo{
-  font-size: 1rem;
-  letter-spacing: 1px;
-  font-family: $primary-font;
+@mixin sub-titulos{
+  font-family: $fuente-especial;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: .1rem;
+  padding: 1rem 0;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  @include mq(mdl){
+    font-size: 1.8rem;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    width: 4rem;
+    height: 1px;
+    background-color: #c4c4c4;
+    @include mq(smH){
+      width: 30%;
+    }
+    @include mq(mdl){
+      // left: 0;
+      width: 38%;
+    }
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+    width: 4rem;
+    height: 1px;
+    background-color: #c4c4c4;
+    @include mq(smH){
+      width: 30%;
+    }
+    @include mq(mdl){
+      // right: 0;
+      width: 38%;
+    }
+  }
 }
