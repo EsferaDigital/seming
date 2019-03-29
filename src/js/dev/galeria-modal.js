@@ -57,8 +57,20 @@ const galeriaModal = function modalGaleria(){
 
   //Contenido de cada modal
 
-  const contModal1 = `<div>Hola</div>`
+  const contModal1 = `
+    <div class="Modal-gallery">
+      <i class="fas fa-angle-left atras"></i>
+      <i class="fas fa-angle-right adelante"></i>
+      <div class="Modal-gallery-item">
+        <div class="Modal-gallery-item-img"><img src="img/01-flesan.jpg" alt="Flesan Grua"></div>
+        <div class="Modal-gallery-item-text">
+          <p>FLESAN</p>
+          <p>SOSTENIMIENTO DUOC UC</p>
+        </div>
+      </div>
+    </div>`
 
+  //Mostramos modal
   modal1.addEventListener('click', () => {
     printModal(`${contModal1}`)
   })

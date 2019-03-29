@@ -86,7 +86,7 @@ gulp.task('globaljs', () => {
     .transform('babelify', {presets: ["@babel/preset-env"]})
     .bundle()
     .on('error', err => console.log(err.message))
-    .pipe(source('./public/js/global.min.js'))
+    .pipe(source('./public/js/obras.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('./'))
