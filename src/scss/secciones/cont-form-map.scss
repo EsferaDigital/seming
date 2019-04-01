@@ -152,6 +152,19 @@
       }
     }
   }
+  & h4{
+    position: relative;
+    top: -350vh;
+    left: -71%;
+    background-color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: $shadow-blur;
+    font-weight: 500;
+    border: 1px solid #545454;
+  }
 }
 
 .Form-item:focus-within{

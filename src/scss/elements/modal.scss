@@ -77,24 +77,59 @@
     content: "\0078";
     position: absolute;
     color: #fff;
-    top: 1rem;
+    top: .5rem;
     right: 1rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    @include mq(mdl){
+      top: 1.5rem;
+      right: 2rem;
+      font-size: 2.7rem;
+    }
   }
   &-item{
     width: 80%;
     margin: auto;
     background-color: transparent;
+    // border: 1px solid red;
   }
 }
 
 
 .Ligthbox-contenedor{
   position: relative;
-  width: 500px;
-  height: 600px;
+  width: 250px;
+  height: 300px;
   margin: auto;
   background-color: transparent;
+  --ticono: 1.5rem;
+  --aicono: -1.2rem;
+  @include mq(sm){
+    --ticono: 1.7rem;
+    --aicono: -1.5rem;
+    width: 270px;
+    height: 320px;
+  }
+  @include mq(smH){
+    --aicono: -3rem;
+  }
+  @include mq(smm){
+    width: 330px;
+    height: 380px;
+    // --aicono: -2rem;
+  }
+  @include mq(md){
+    --aicono: -4rem;
+    --ticono: 2rem;
+  }
+  @include mq(mdl){
+    width: 450px;
+    height: 500px;
+  }
+  @include mq(lgs){
+    --aicono: -6rem;
+    width: 510px;
+    height: 560px;
+  }
   &-item{
     position: absolute;
     width: 100%;
@@ -111,7 +146,7 @@
     &-text{
       position: relative;
       transform: translateY(-100%);
-      border: 1px solid blue;
+      // border: 1px solid blue;
       top: 0;
       text-align: center;
       background-color: color(secondary);
@@ -128,20 +163,20 @@
   position: absolute;
   color: white;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: var(--ticono);
   top: 50%;
   transform: translateX(-50%);
-  left: -4rem;
+  left: var(--aicono);
 }
 
 .Ligthbox-siguiente{
   position: absolute;
   color: white;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: var(--ticono);
   top: 50%;
   transform: translateX(-50%);
-  right: -5.75rem;
+  right: calc(var(--aicono) + -1.35rem);
 }
 
 .Ligthbox-actual{

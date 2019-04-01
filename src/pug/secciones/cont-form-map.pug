@@ -9,10 +9,10 @@
         a(href="https://www.linkedin.com/company/seming-ltda/?viewAsMember=true" target="_blank").Linkedin
   section.Formulario
     .Formulario-content
-      form(action="enviar.php" id="Form" name="inicioForm" method="POST" class="Form")
+      form(id="Form" name="inicioForm" method="POST" class="Form")
         .Form-item
           label(for="nombre") NOMBRE COMPLETO
-          input(type="text" id="name" name="name" class="Form-input")
+          input(type="text" id="name" name="name" class="Form-input" placeholder="")
           span.SpanUser
             i(class="fas fa-user")
         .Form-item
@@ -25,6 +25,7 @@
           button(type="submit" id="btnSend" name="send" value="send") ENVIAR
             span
               i(class="fas fa-arrow-right")
+        h4 Gracias por escribirnos. Pronto te responderemos.
   section.Maps
     .Maps-img
       .Mapa#Mapa

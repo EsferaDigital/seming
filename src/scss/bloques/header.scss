@@ -8,6 +8,7 @@
   line-height: $altura-header;
   background-color: color(background-header);
   box-shadow: $shadow-flat;
+  transition: height .5s;
   @include mq(mdl){
     padding: 0 10%;
     margin: auto;
@@ -20,6 +21,10 @@
       display: flex;
     }
   }
+}
+
+.anima-header{
+  top: -$altura-header;
 }
 
 .Logo{
@@ -195,5 +200,6 @@
 }
 
 .Main{
+  transition: margin .5s;
   margin-top: $altura-header;
 }

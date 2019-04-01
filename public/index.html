@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Open+Sans">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?t=1554128736850">
   </head>
   <body id="body">
     <header class="Header">
       <section class="Header-container">
-        <div class="Logo"><a href="https://esfera-digital.000webhostapp.com/"><img src="img/logo.png" alt="Logo-Seming"></a></div>
+        <div class="Logo"><a href="http://localhost:3000/"><img src="img/logo.png" alt="Logo-Seming"></a></div>
         <button class="Panel-btn hamburger hamburger--elastic" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
         <section class="Panel">
           <nav class="Menu">
             <ul>
-              <li><a href="https://esfera-digital.000webhostapp.com/">INICIO</a></li>
-              <li><a href="https://esfera-digital.000webhostapp.com/nuestras-obras.html">NUESTRAS OBRAS</a></li>
-              <li><a href="https://esfera-digital.000webhostapp.com/quienes-somos.html">QUIENES SOMOS</a></li>
+              <li><a href="http://localhost:3000/">INICIO</a></li>
+              <li><a href="http://localhost:3000/nuestras-obras.html">NUESTRAS OBRAS</a></li>
+              <li><a href="http://localhost:3000/quienes-somos.html">QUIENES SOMOS</a></li>
             </ul>
           </nav>
         </section>
@@ -96,7 +96,7 @@
                 </div>
               </div>
             </div>
-            <div class="Obras-inicio-btn"><a href="https://esfera-digital.000webhostapp.com/nuestras-obras.html">VER NUESTRAS OBRAS<span><i class="fas fa-arrow-right"></i></span></a></div>
+            <div class="Obras-inicio-btn"><a href="http://localhost:3000/nuestras-obras.html">VER NUESTRAS OBRAS<span><i class="fas fa-arrow-right"></i></span></a></div>
           </section>
         </div>
         <div class="Cont-form-map">
@@ -110,10 +110,10 @@
           </section>
           <section class="Formulario">
             <div class="Formulario-content">
-              <form class="Form" action="enviar.php" id="Form" name="inicioForm" method="POST">
+              <form class="Form" id="Form" name="inicioForm" method="POST">
                 <div class="Form-item">
                   <label for="nombre">NOMBRE COMPLETO</label>
-                  <input class="Form-input" type="text" id="name" name="name"><span class="SpanUser"><i class="fas fa-user"></i></span>
+                  <input class="Form-input" type="text" id="name" name="name" placeholder=""><span class="SpanUser"><i class="fas fa-user"></i></span>
                 </div>
                 <div class="Form-item">
                   <label for="email">E-MAIL</label>
@@ -126,6 +126,7 @@
                 <div class="Form-item">
                   <button type="submit" id="btnSend" name="send" value="send">ENVIAR<span><i class="fas fa-arrow-right"></i></span></button>
                 </div>
+                <h4>Gracias por escribirnos. Pronto te responderemos.</h4>
               </form>
             </div>
           </section>
@@ -140,6 +141,6 @@
     <footer class="Footer">
       <p>Copyright &#169; 2018 SEMING. All rights reserved.</p>
     </footer>
-    <script src="js/inicio.js"></script>
+    <script src="js/inicio.js?t=1554128736850"></script>
   </body>
 </html>
