@@ -43,7 +43,7 @@ gulp.task('pug2html', function buildHTML() {
       pretty: true
     }))
     .pipe(gulpPugBeautify({ omit_empty: true }))
-    .pipe(htmlmin({ collapseWhitespace: true })) //Activar para minificar
+    // .pipe(htmlmin({ collapseWhitespace: true })) //Activar para minificar
     .pipe(gulp.dest('./public/'));
 });
 
@@ -125,12 +125,12 @@ gulp.task('server', function () {
     }
   });
 
-	gulp.watch('./src/pug/*/*.pug', ['pug2html']).on("change", server.reload)
-	gulp.watch('./src/scss/*/*.scss', ['sass', 'cache']).on("change", server.reload)
-  gulp.watch('./src/js/*/*.js', ['globaljs', 'uniquejs', 'cache']).on("change", server.reload)
-	gulp.watch('./src/img/*.*', ['img']).on("change", server.reload)
+  gulp.watch('./src/pug/*/*.pug', ['pug2html']).on("change", server.reload)
+  gulp.watch('./src/scss/*/*.scss', ['sass', 'cache']).on("change", server.reload)
+  // gulp.watch('./src/js/*/*.js', ['globaljs', 'uniquejs', 'cache']).on("change", server.reload)
+  gulp.watch('./src/img/*.*', ['img']).on("change", server.reload)
 });
 
 // 9° Pone en ejecución toda la programación al comando gulp por consola
 
-gulp.task('default', ['pug2html', 'sass', 'globaljs', 'server'], function () {});
+gulp.task('default', ['pug2html', 'sass', 'server'], function () {});

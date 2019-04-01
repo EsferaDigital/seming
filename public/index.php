@@ -96,7 +96,7 @@
                 </div>
               </div>
             </div>
-            <div class="Obras-inicio-btn"><a href="https://esfera-digital.000webhostapp.com/nuestras-obras.html">VER NUESTRAS OBRAS<span><i class="fas fa-arrow-right"></i></span></a></div>
+            <div class="Obras-inicio-btn"><a href="http://localhost:3000/nuestras-obras.html">VER NUESTRAS OBRAS<span><i class="fas fa-arrow-right"></i></span></a></div>
           </section>
         </div>
         <div class="Cont-form-map">
@@ -110,7 +110,7 @@
           </section>
           <section class="Formulario">
             <div class="Formulario-content">
-              <form class="Form" action="enviar.php" id="Form" name="inicioForm" method="POST">
+              <form class="Form" id="Form" name="inicioForm" method="POST">
                 <div class="Form-item">
                   <label for="nombre">NOMBRE COMPLETO</label>
                   <input class="Form-input" type="text" id="name" name="name"><span class="SpanUser"><i class="fas fa-user"></i></span>
@@ -127,6 +127,7 @@
                   <button type="submit" id="btnSend" name="send" value="send">ENVIAR<span><i class="fas fa-arrow-right"></i></span></button>
                 </div>
               </form>
+              <?php include("enviar.php"); ?>
             </div>
           </section>
           <section class="Maps">

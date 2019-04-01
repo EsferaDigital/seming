@@ -1,8 +1,8 @@
 .Header{
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // z-index: capa(capa10);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: capa(capa10);
   width: 100%;
   height: $altura-header;
   line-height: $altura-header;
@@ -119,7 +119,7 @@
   margin: 0 auto;
   padding-top: $altura-header;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   background: color(secondary);
   @include mq(lgs){
     width: 100%;
@@ -192,4 +192,8 @@
       font-weight: 800;
     }
   }
+}
+
+.Main{
+  margin-top: $altura-header;
 }
