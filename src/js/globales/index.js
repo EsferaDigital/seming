@@ -4,9 +4,11 @@ import mapa from '../dev/mapa';
 import formSend from '../dev/formulario';
 import galeriaModal from '../dev/galeria-modal';
 // import sliderModal from '../dev/slider-modal';
+import animaciones from '../dev/animaciones'
 
 toggleNav()
 // //BannerInicio()
 mapa()
 formSend()
 galeriaModal()
+animaciones()

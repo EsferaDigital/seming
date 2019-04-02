@@ -8,7 +8,6 @@
   line-height: $altura-header;
   background-color: color(background-header);
   box-shadow: $shadow-flat;
-  transition: height .5s;
   @include mq(mdl){
     padding: 0 10%;
     margin: auto;
@@ -23,15 +22,12 @@
   }
 }
 
-.anima-header{
-  top: -$altura-header;
-}
-
 .Logo{
   // border: 1px solid green;
   position: absolute;
   z-index: capa(capa1);
   transform: translate3d(10px, 50px, 0);
+  transition: all .5s;
   @include mq(mdl){
     position: static;
     width: 50%;
@@ -45,7 +41,7 @@
     // padding: .5rem;
     width: auto;
     height: $altura-header;
-    transition: box-shadow .3s;
+    transition: all .5s;
     @include mq(lgs){
       width: 30%;
       height: auto;
@@ -58,6 +54,20 @@
       box-shadow: $shadow-flat;
     }
   }
+}
+
+.anima-logo{
+  transform: translate3d(10px, 0, 0);
+  @include mq(mdl){
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.achica-logo{
+  width: 13% !important;
+  height: calc($altura-header - 1rem) !important;
+  margin: .5rem auto;
+  // border: 2px solid red;
 }
 
 
