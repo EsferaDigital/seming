@@ -64,10 +64,34 @@
 }
 
 .achica-logo{
-  width: 13% !important;
-  height: calc($altura-header - 1rem) !important;
+  width: 20% !important;
+  height: auto !important;
   margin: .5rem auto;
-  // border: 2px solid red;
+  max-width: 20rem;
+  // border: 1px solid red;
+  @include mq(sm){
+    width: 18% !important;
+  }
+  @include mq(smm){
+    width: 17% !important;
+    max-width: 17%;
+  }
+  // @include mq(sml){
+  //   max-width: 60px;
+  // }
+  @include mq(md){
+    width: 20% !important;
+  }
+  @include mq(mdl){
+    width: 18% !important;
+  }
+  @include mq(lgs){
+    width: 17% !important;
+  }
+  @include mq(lgm){
+    width: 13% !important;
+    max-width: 60px;
+  }
 }
 
 

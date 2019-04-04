@@ -167,11 +167,11 @@
   }
 }
 
-.Form-item:focus-within{
-  & .SpanUser{
-    color: transparent;
-  }
-}
+// .Form-item:focus-within{
+//   & .SpanUser{
+//     color: transparent;
+//   }
+// }
 
 .SpanUser{
   position: absolute;
@@ -180,12 +180,12 @@
   color: color(icons);
 }
 
-// input[type=text]:focus{
-//   background-color: white;
-//   & .SpanUser{
-//     color: transparent;
-//   }
-// }
+input[type=text]::placeholder{
+  background-color: white;
+  & .SpanUser{
+    color: transparent;
+  }
+}
 
 .Maps{
   @include mq(md){

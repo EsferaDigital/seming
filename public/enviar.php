@@ -4,7 +4,7 @@ if(isset($_POST['send'])){
     $nombre = $_POST['name'];
     $correo = $_POST['email'];
     $mensaje = $_POST['message'];
-    $destino = "gabrielzavando@gmail.com";
+    $destino = "info@seming.cl";
     $asunto = "Mensaje desde la web";
     $carta = "De: " . $nombre . "\r\n";
     $carta .= "Para: " . $destino . "\r\n";
@@ -14,7 +14,7 @@ if(isset($_POST['send'])){
     $header .= "X-Mailer: PHP/" . phpversion();
     $mail = @mail($destino,$asunto,$carta,$header);
     if($mail){
-      echo "<h4>Gracias por escribirnos. Pronto te responderemos</h4>";
+      echo '<script type="text/javascript">alert("Gracias por Escribirnos");</script>';
     }
   }
 }

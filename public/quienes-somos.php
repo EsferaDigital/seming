@@ -10,25 +10,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Open+Sans">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body id="body">
-    <header class="Header">
+    <header class="Header" id="MainHeader">
       <section class="Header-container">
-        <div class="Logo"><a href="https://esfera-digital.000webhostapp.com/"><img src="img/logo.png" alt="Logo-Seming"></a></div>
+        <div class="Logo" id="Logo"><a href="http://seming.cl/"><img src="img/logo.png" alt="Logo-Seming" id="LogoImg"></a></div>
         <button class="Panel-btn hamburger hamburger--elastic" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
         <section class="Panel">
           <nav class="Menu">
             <ul>
-              <li><a href="https://esfera-digital.000webhostapp.com/">INICIO</a></li>
-              <li><a href="https://esfera-digital.000webhostapp.com/nuestras-obras.html">NUESTRAS OBRAS</a></li>
-              <li><a href="https://esfera-digital.000webhostapp.com/quienes-somos.html">QUIENES SOMOS</a></li>
+              <li><a href="http://seming.cl/">INICIO</a></li>
+              <li><a href="http://seming.cl/nuestras-obras.php">NUESTRAS OBRAS</a></li>
+              <li><a href="http://seming.cl/quienes-somos.php">QUIENES SOMOS</a></li>
             </ul>
           </nav>
         </section>
       </section>
     </header>
-    <main class="Main">
+    <main class="Main" id="Main">
       <div class="Main-container">
         <div class="Container-layout">
           <section class="Descripcion-somos">

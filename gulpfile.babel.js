@@ -31,8 +31,8 @@ const imageminOptions = {
 }
 
 let onError = function (err) {
-	console.log('Se ha producido un error: ', err.message);
-	this.emit('end');
+  console.log('Se ha producido un error: ', err.message);
+  this.emit('end');
 }
 
 // 1°Toma cualquier archivo pug, lo pasa a html, lo minifica y crea un archivo html en la raíz si este no existe.
@@ -86,7 +86,7 @@ gulp.task('globaljs', () => {
     .transform('babelify', {presets: ["@babel/preset-env"]})
     .bundle()
     .on('error', err => console.log(err.message))
-    .pipe(source('./public/js/obras.js'))
+    .pipe(source('./public/js/somos.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('./'))
@@ -128,7 +128,7 @@ gulp.task('server', function () {
   gulp.watch('./src/pug/*/*.pug', ['pug2html']).on("change", server.reload)
   gulp.watch('./src/scss/*/*.scss', ['sass', 'cache']).on("change", server.reload)
   // gulp.watch('./src/js/*/*.js', ['globaljs', 'uniquejs', 'cache']).on("change", server.reload)
-  gulp.watch('./src/img/*.*', ['img']).on("change", server.reload)
+  // gulp.watch('./src/img/*.*', ['img']).on("change", server.reload)
 });
 
 // 9° Pone en ejecución toda la programación al comando gulp por consola
