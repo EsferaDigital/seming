@@ -4,7 +4,7 @@
     <title>SEMING | Quienes somos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1.0">
     <meta name="description" content="Descripción breve">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Open+Sans">
@@ -34,8 +34,8 @@
         <div class="Container-layout">
           <section class="Descripcion-somos">
             <h2>QUIENES SOMOS</h2>
-            <p>Seming Ltda. se fundó en junio 2017 cuando sus dueños, junto a un destacado grupo de profesionales del área de construcción, se propusieran entregar a sus clientes todo su ingenio, capacidad y experiencia en el rubro de la maestranza.</p>
-            <p>Gracias a la experiencia y altas competencias del equipo, el primer proyecto 'Altillo y oficinas' para la empresa Compresión SPA, se ejecutó cumpliendo tiempo y forma. La calidad de este trabajo, permitió ganar confianza para abordar proyectos de mayor dimensión. Esto significó un importante crecimiento del negocioo que obligó a redefinir y fortalecer la estructura de la empresa e instalar un modelo operativo y comercial moderno y profesional para la gestión de obras estructurales. Hoy, Seming cuenta con un variado portafolio de proyectos de todo tipo de envergadura, relacionados principalmente al rubro minero, industrial y habitacional, a lo largo de todo el país. Gracias nuestro profesionalismo y altos estándares de calidad, somos una alternativa real y confiable para todo tipo de proyecto empresarial.</p>
+            <p>Seming Ltda. se fundó en junio 2017 cuando sus dueños, junto a un destacado equipo de profesionales del área de la construcción, se propusieron entregar un servicio que demostrara todo el ingenio, capacidades y experiencia que manejaban en el rubro de la maestranza.</p>
+            <p>Gracias a la experiencia y las altas competencias de los integrantes de Seming, se comenzaron a abordar distintos tipos de proyectos, cumpliendo tiempo y forma. La calidad de diversos trabajos permitió ganar confianza para abordar proyectos de mayor dimensión. Esto significó un importante crecimiento del negocio que obligó a redefinir y fortalecer la estructura de la empresa e instalar un modelo operativo y comercial moderno y profesional para la gestión de obras estructurales. Hoy, Seming cuenta con un variado portafolio de proyectos de diversa envergadura, relacionados principalmente al rubro minero, industrial y habitacional, a lo largo de todo el país. Gracias a nuestro profesionalismo y alto estándares de calidad, somos una alternativa real y confiable para todo tipo de proyecto empresarial.</p>
           </section>
         </div>
         <section class="Banner-somos">
@@ -91,6 +91,7 @@
     <footer class="Footer">
       <p>Copyright &#169; 2018 SEMING. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/somos.js"></script>
   </body>
 </html>

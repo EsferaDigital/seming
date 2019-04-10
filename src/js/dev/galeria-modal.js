@@ -327,31 +327,61 @@ const galeriaModal = function modalGaleria(){
       <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
     </div>`
 
-  const contModal9 = `
+    const contModal9 = `
     <div class="Ligthbox-contenedor">
       <div class="Ligthbox-contenedor-item Ligthbox-actual">
-        <img src="img/01-iglesia.jpg" alt="Terraza">
+        <img src="img/01-iglesia.jpg" alt="Montaje Techo">
         <div class="Ligthbox-contenedor-item-text">
           <p>Iglesia Cristiana Las Condes</p>
+        </div>
       </div>
       <div class="Ligthbox-contenedor-item">
-        <img src="img/02-iglesia.jpg" alt="Estructura Techo">
+        <img src="img/02-iglesia.jpg" alt="Terraza techada">
         <div class="Ligthbox-contenedor-item-text">
           <p>Iglesia Cristiana Las Condes</p>
+        </div>
       </div>
       <div class="Ligthbox-contenedor-item">
-        <img src="img/03-iglesia.jpg" alt="Ventanales">
+        <img src="img/03-iglesia.jpg" alt="Pilares">
         <div class="Ligthbox-contenedor-item-text">
           <p>Iglesia Cristiana Las Condes</p>
+        </div>
       </div>
       <div class="Ligthbox-contenedor-item">
-        <img src="img/04-iglesia.jpg" alt="Techumbre">
+        <img src="img/04-iglesia.jpg" alt="Hombres trabajando">
         <div class="Ligthbox-contenedor-item-text">
           <p>Iglesia Cristiana Las Condes</p>
+        </div>
       </div>
       <div class="Ligthbox-anterior" id="anterior">&#10094</div>
       <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
     </div>`
+
+  // const contModal9 = `
+  //   <div class="Ligthbox-contenedor">
+  //     <div class="Ligthbox-contenedor-item Ligthbox-actual">
+  //       <img src="img/01-iglesia.jpg" alt="Terraza">
+  //       <div class="Ligthbox-contenedor-item-text">
+  //         <p>Iglesia Cristiana Las Condes</p>
+  //     </div>
+  //     <div class="Ligthbox-contenedor-item">
+  //       <img src="img/02-iglesia.jpg" alt="Estructura Techo">
+  //       <div class="Ligthbox-contenedor-item-text">
+  //         <p>Iglesia Cristiana Las Condes</p>
+  //     </div>
+  //     <div class="Ligthbox-contenedor-item">
+  //       <img src="img/03-iglesia.jpg" alt="Ventanales">
+  //       <div class="Ligthbox-contenedor-item-text">
+  //         <p>Iglesia Cristiana Las Condes</p>
+  //     </div>
+  //     <div class="Ligthbox-contenedor-item">
+  //       <img src="img/04-iglesia.jpg" alt="Techumbre">
+  //       <div class="Ligthbox-contenedor-item-text">
+  //         <p>Iglesia Cristiana Las Condes</p>
+  //     </div>
+  //     <div class="Ligthbox-anterior" id="anterior">&#10094</div>
+  //     <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
+  //   </div>`
 
   modal1.addEventListener('click', () => {
     printModal(`${contModal1}`)

@@ -5,6 +5,7 @@ import formSend from '../dev/formulario';
 import galeriaModal from '../dev/galeria-modal';
 // import sliderModal from '../dev/slider-modal';
 import animaciones from '../dev/animaciones'
+import enviadoMsg from '../dev/mail-message'
 
 toggleNav()
 // BannerInicio()
@@ -13,3 +14,4 @@ formSend()
 galeriaModal()
 animaciones()
 // sliderModal()
+enviadoMsg()

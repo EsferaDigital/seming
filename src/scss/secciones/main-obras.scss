@@ -1,11 +1,19 @@
 .root{
   padding: 4rem 0;
+  // border: 2px solid green;
+  @include mq(md){
+    width: 90%;
+    margin: auto;
+  }
+  @include mq(mdl){
+    width: 100%;
+  }
   @include mq(lgm){
     padding: 6rem 0;
   }
   & h2{
     @include sub-titulos;
-    --ancho: 27%;
+    --ancho: 25%;
     @include mq(md){
       --ancho: 32%;
     }
@@ -29,11 +37,24 @@
       letter-spacing: .1rem;
       font-weight: 500;
       padding: 2rem 0;
+      padding-left: .5rem;
+      font-size: 1rem;
+      @include mq(md){
+        padding-left: 0;
+        font-size: 1.3rem;
+      }
       &-prox{
         width: 200px;
-        margin-left: 5%;
-        border: 1px solid red;
+        margin-left: .5rem;
+        // border: 1px solid red;
         text-align: center;
+        @include mq(md){
+          margin-left: 0;
+        }
+        @include mq(lgs){
+          width: 265px;
+          padding: 0 1rem;
+        }
       }
     }
   }
@@ -45,10 +66,10 @@
   display: grid;
   grid-gap: 1.5rem;
   grid-template-columns: 1fr;
-  border: 2px solid green;
+  // border: 2px solid green;
   @include mq(md){
     grid-template-columns: 1fr 1fr;
-    grid-gap: 4rem;
+    grid-gap: 2rem;
   }
   @include mq(lgs){
     grid-template-columns: repeat(3, 1fr);
@@ -99,7 +120,7 @@
     display: flex;
     width: 100%;
     z-index: 1;
-    height: 93%;
+    height: 90%;
     flex-wrap: wrap;
     align-content: center;
     background: color(capaT);

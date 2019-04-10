@@ -13,8 +13,8 @@ if(isset($_POST['send'])){
     $header .= "Contestar a: " . $correo . "\r\n";
     $header .= "X-Mailer: PHP/" . phpversion();
     $mail = @mail($destino,$asunto,$carta,$header);
-    if($mail){
-      echo '<script type="text/javascript">alert("Gracias por Escribirnos");</script>';
-    }
+    // if($mail){
+    //   echo '<script type="text/javascript">alert("Gracias por Escribirnos");</script>';
+    // }
   }
 }

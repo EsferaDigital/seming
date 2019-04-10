@@ -4,12 +4,13 @@
     <title>SEMING</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1.0">
     <meta name="description" content="Descripción breve">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Open+Sans">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body id="body">
@@ -112,7 +113,7 @@
             <div class="Formulario-content">
               <form class="Form" id="Form" name="inicioForm" method="POST">
                 <div class="Form-item">
-                  <label for="name">NOMBRE COMPLETO</label>
+                  <label for="nombre">NOMBRE COMPLETO</label>
                   <input class="Form-input" type="text" id="name" name="name"><span class="SpanUser"><i class="fas fa-user"></i></span>
                 </div>
                 <div class="Form-item">
@@ -141,6 +142,7 @@
     <footer class="Footer">
       <p>Copyright &#169; 2018 SEMING. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/inicio.js"></script>
   </body>
 </html>
