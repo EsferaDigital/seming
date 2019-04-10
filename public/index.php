@@ -21,8 +21,8 @@
           <nav class="Menu">
             <ul>
               <li><a href="http://seming.cl/">INICIO</a></li>
-              <li><a href="http://seming.cl/nuestras-obras.php">NUESTRAS OBRAS</a></li>
-              <li><a href="http://seming.cl/quienes-somos.php">QUIENES SOMOS</a></li>
+              <li><a href="http://seming.cl/nuestras-obras">NUESTRAS OBRAS</a></li>
+              <li><a href="http://seming.cl/quienes-somos">QUIENES SOMOS</a></li>
             </ul>
           </nav>
         </section>
@@ -96,7 +96,7 @@
                 </div>
               </div>
             </div>
-            <div class="Obras-inicio-btn"><a href="http://seming.cl/nuestras-obras.php">VER NUESTRAS OBRAS<span><i class="fas fa-arrow-right"></i></span></a></div>
+            <div class="Obras-inicio-btn"><a href="http://seming.cl/nuestras-obras">VER NUESTRAS OBRAS<span><i class="fas fa-arrow-right"></i></span></a></div>
           </section>
         </div>
         <div class="Cont-form-map">
@@ -112,7 +112,7 @@
             <div class="Formulario-content">
               <form class="Form" id="Form" name="inicioForm" method="POST">
                 <div class="Form-item">
-                  <label for="nombre">NOMBRE COMPLETO</label>
+                  <label for="name">NOMBRE COMPLETO</label>
                   <input class="Form-input" type="text" id="name" name="name"><span class="SpanUser"><i class="fas fa-user"></i></span>
                 </div>
                 <div class="Form-item">

@@ -1,5 +1,4 @@
 .root{
-  // border: 2px solid red;
   padding: 4rem 0;
   @include mq(lgm){
     padding: 6rem 0;
@@ -11,7 +10,7 @@
       --ancho: 32%;
     }
     @include mq(lgm){
-      padding: 2rem 0;
+      padding: 2.5rem 0;
       --ancho: 39%;
     }
     &:before{
@@ -19,6 +18,23 @@
     }
     &:after{
       width: var(--ancho);
+    }
+  }
+  &-item{
+    // border: 2px solid blue;
+    margin-bottom: 1rem;
+    &-text{
+      font-family: $fuente-especial;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      font-weight: 500;
+      padding: 2rem 0;
+      &-prox{
+        width: 200px;
+        margin-left: 5%;
+        border: 1px solid red;
+        text-align: center;
+      }
     }
   }
 }
@@ -29,9 +45,14 @@
   display: grid;
   grid-gap: 1.5rem;
   grid-template-columns: 1fr;
+  border: 2px solid green;
   @include mq(md){
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
+  }
+  @include mq(lgs){
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
   }
   @include mq(lgm){
     margin-top: 1rem;
@@ -39,13 +60,13 @@
   &-item{
     cursor: pointer;
     position: relative;
-    border-bottom: 1px solid #c4c4c4;
+    // border-bottom: 1px solid #c4c4c4;
     &:hover .Gallery-obras-item-text-hover{
       transform: scale3d(1,1,1);
     }
     &:hover .Gallery-obras-item-text{
       background-color: color(secondary);
-      & h4, p{
+      & p{
         color: white;
       }
     }
@@ -57,20 +78,19 @@
       z-index: capa(capa3);
       text-align: center;
       padding: .5rem 0;
-      & h4, p{
+      border-bottom: 1px solid #c4c4c4;
+      & p{
         font-size: 14px;
         font-weight: bold;
         letter-spacing: 0.1rem;
         transition: all .5s;
+        padding: .3rem 0;
         @include mq(md){
           font-size: 12px;
         }
         @include mq(lgs){
           font-size: 16px;
         }
-      }
-      & h4{
-        margin-bottom: .5rem;
       }
     }
   }
@@ -79,17 +99,17 @@
     display: flex;
     width: 100%;
     z-index: 1;
-    height: 100%;
+    height: 93%;
     flex-wrap: wrap;
     align-content: center;
     background: color(capaT);
     transform: scale3d(1,0,1);
     transition: transform .5s;
-    & p{
-      width: 90%;
+    & li{
+      width: 80%;
       margin: auto;
       color: white;
-      text-align: center;
+      // border: 1px solid blue;
     }
   }
 }
@@ -126,8 +146,5 @@
         font-size: 14px;
       }
     }
-    // & p:first-child{
-    //   padding-bottom: .3rem;
-    // }
   }
 }

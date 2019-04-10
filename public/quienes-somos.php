@@ -22,8 +22,8 @@
           <nav class="Menu">
             <ul>
               <li><a href="http://seming.cl/">INICIO</a></li>
-              <li><a href="http://seming.cl/nuestras-obras.php">NUESTRAS OBRAS</a></li>
-              <li><a href="http://seming.cl/quienes-somos.php">QUIENES SOMOS</a></li>
+              <li><a href="http://seming.cl/nuestras-obras">NUESTRAS OBRAS</a></li>
+              <li><a href="http://seming.cl/quienes-somos">QUIENES SOMOS</a></li>
             </ul>
           </nav>
         </section>

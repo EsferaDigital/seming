@@ -37,6 +37,9 @@ const galeriaModal = function modalGaleria(){
   const modal4 = document.getElementById('modal4')
   const modal5 = document.getElementById('modal5')
   const modal6 = document.getElementById('modal6')
+  const modal7 = document.getElementById('modal7')
+  const modal8 = document.getElementById('modal8')
+  const modal9 = document.getElementById('modal9')
 
   const printModal = content => {
     //Crea contenedor interno
@@ -75,6 +78,36 @@ const galeriaModal = function modalGaleria(){
   const contModal1 = `
     <div class="Ligthbox-contenedor">
       <div class="Ligthbox-contenedor-item Ligthbox-actual">
+        <img src="img/01-prize-osorno.jpg" alt="Galpón y Grua">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Packing Prize Osorno</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/02-prize-osorno.jpg" alt="Techo de Galpón">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Packing Prize Osorno</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/03-prize-osorno.jpg" alt="Estructura del Galpon">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Packing Prize Osorno</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/04-prize-osorno.jpg" alt="Esquina de Techo">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Packing Prize Osorno</p>
+        </div>
+      </div>
+      <div class="Ligthbox-anterior" id="anterior">&#10094</div>
+      <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
+    </div>`
+
+  const contModal2 = `
+    <div class="Ligthbox-contenedor">
+      <div class="Ligthbox-contenedor-item Ligthbox-actual">
         <img src="img/01-flesan.jpg" alt="Flesan Grua">
         <div class="Ligthbox-contenedor-item-text">
           <p>Flesan</p>
@@ -106,172 +139,219 @@ const galeriaModal = function modalGaleria(){
       <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
     </div>`
 
-  const contModal2 = `
-    <div class="Ligthbox-contenedor">
-      <div class="Ligthbox-contenedor-item Ligthbox-actual">
-        <img src="img/01-ucentral.jpg" alt="Techo">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>Universidad Central</p>
-          <p>Montaje de Altillos</p>
-        </div>
-      </div>
-      <div class="Ligthbox-contenedor-item">
-        <img src="img/02-ucentral.jpg" alt="Salon">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>Universidad Central</p>
-          <p>Montaje de Altillo</p>
-        </div>
-      </div>
-      <div class="Ligthbox-contenedor-item">
-        <img src="img/03-ucentral.jpg" alt="Luces">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>Universidad Central</p>
-          <p>Montaje de Altillo</p>
-        </div>
-      </div>
-      <div class="Ligthbox-contenedor-item">
-        <img src="img/04-ucentral.jpg" alt="Entretecho">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>Universidad Central</p>
-          <p>Montaje de Altillo</p>
-        </div>
-      </div>
-      <div class="Ligthbox-anterior" id="anterior">&#10094</div>
-      <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
-    </div>`
-
-  const contModal3 = `
-    <div class="Ligthbox-contenedor">
-      <div class="Ligthbox-contenedor-item Ligthbox-actual">
-        <img src="img/01-iglesia.jpg" alt="Terraza">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>Iglesia Martín de Zamora</p>
-          <p>Las Condes</div>
-      </div>
-      <div class="Ligthbox-contenedor-item">
-        <img src="img/02-iglesia.jpg" alt="Estructura Techo">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>Iglesia Martín de Zamora</p>
-          <p>Las Condes</div>
-      </div>
-      <div class="Ligthbox-contenedor-item">
-        <img src="img/03-iglesia.jpg" alt="Ventanales">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>Iglesia Martín de Zamora</p>
-          <p>Las Condes</div>
-      </div>
-      <div class="Ligthbox-contenedor-item">
-        <img src="img/04-iglesia.jpg" alt="Techumbre">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>Iglesia Martín de Zamora</p>
-          <p>Las Condes</div>
-      </div>
-      <div class="Ligthbox-anterior" id="anterior">&#10094</div>
-      <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
-    </div>`
-
-  const contModal4 = `
-    <div class="Ligthbox-contenedor">
-      <div class="Ligthbox-contenedor-item Ligthbox-actual">
-        <img src="img/01-damian.jpg" alt="Montaje Techo">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>San Damián</p>
-          <p>Casa de Fierro</p>
-        </div>
-      </div>
-      <div class="Ligthbox-contenedor-item">
-        <img src="img/02-damian.jpg" alt="Terraza techada">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>San Damián</p>
-          <p>Casa de Fierro</p>
-        </div>
-      </div>
-      <div class="Ligthbox-contenedor-item">
-        <img src="img/03-damian.jpg" alt="Pilares">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>San Damián</p>
-          <p>Casa de Fierro</p>
-        </div>
-      </div>
-      <div class="Ligthbox-contenedor-item">
-        <img src="img/04-damian.jpg" alt="Hombres trabajando">
-        <div class="Ligthbox-contenedor-item-text">
-          <p>San Damián</p>
-          <p>Casa de Fierro</p>
-        </div>
-      </div>
-      <div class="Ligthbox-anterior" id="anterior">&#10094</div>
-      <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
-    </div>`
-
-  const contModal5 = `
+    const contModal3 = `
     <div class="Ligthbox-contenedor">
       <div class="Ligthbox-contenedor-item Ligthbox-actual">
         <img src="img/01-sofruco.jpg" alt="Galpón">
         <div class="Ligthbox-contenedor-item-text">
-          <p>Packing Sofruco</p>
-          <p>Peumo</p>
+          <p>Packing Sofruco Peumo</p>
         </div>
       </div>
       <div class="Ligthbox-contenedor-item">
         <img src="img/02-sofruco.jpg" alt="Maquinaria">
         <div class="Ligthbox-contenedor-item-text">
-          <p>Packing Sofruco</p>
-          <p>Peumo</p>
+          <p>Packing Sofruco Peumo</p>
         </div>
       </div>
       <div class="Ligthbox-contenedor-item">
         <img src="img/03-sofruco.jpg" alt="Palett">
         <div class="Ligthbox-contenedor-item-text">
-          <p>Packing Sofruco</p>
-          <p>Peumo</p>
+          <p>Packing Sofruco Peumo</p>
         </div>
       </div>
       <div class="Ligthbox-contenedor-item">
         <img src="img/04-sofruco.jpg" alt="Linea de Máquinas">
         <div class="Ligthbox-contenedor-item-text">
-          <p>Packing Sofruco</p>
-          <p>Peumo</p>
+          <p>Packing Sofruco Peumo</p>
         </div>
       </div>
       <div class="Ligthbox-anterior" id="anterior">&#10094</div>
       <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
     </div>`
 
-  const contModal6 = `
+    const contModal4 = `
     <div class="Ligthbox-contenedor">
       <div class="Ligthbox-contenedor-item Ligthbox-actual">
-        <img src="img/01-prize-osorno.jpg" alt="Galpón y Grua">
+        <img src="img/01-arandanos.jpg" alt="Galpón">
         <div class="Ligthbox-contenedor-item-text">
-          <p>Packing Prize</p>
-          <p>Osorno</p>
+          <p>Packing Arándanos Chillan</p>
         </div>
       </div>
       <div class="Ligthbox-contenedor-item">
-        <img src="img/02-prize-osorno.jpg" alt="Techo de Galpón">
+        <img src="img/02-arandanos.jpg" alt="Galpón">
         <div class="Ligthbox-contenedor-item-text">
-          <p>Packing Prize</p>
-          <p>Osorno</p>
+          <p>Packing Arándanos Chillan</p>
         </div>
       </div>
       <div class="Ligthbox-contenedor-item">
-        <img src="img/03-prize-osorno.jpg" alt="Estructura del Galpon">
+        <img src="img/03-arandanos.jpg" alt="Palett">
         <div class="Ligthbox-contenedor-item-text">
-          <p>Packing Prize</p>
-          <p>Osorno</p>
+          <p>Packing Arándanos Chillan</p>
         </div>
       </div>
       <div class="Ligthbox-contenedor-item">
-        <img src="img/04-prize-osorno.jpg" alt="Esquina de Techo">
+        <img src="img/04-arandanos.jpg" alt="Pandereta">
         <div class="Ligthbox-contenedor-item-text">
-          <p>Packing Prize</p>
-          <p>Osorno</p>
+          <p>Packing Arándanos Chillan</p>
         </div>
       </div>
       <div class="Ligthbox-anterior" id="anterior">&#10094</div>
       <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
     </div>`
 
+    const contModal5 = `
+    <div class="Ligthbox-contenedor">
+      <div class="Ligthbox-contenedor-item Ligthbox-actual">
+        <img src="img/01-calle18.jpg" alt="Contención de Muro">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo de Muros Calle</p>
+          <p>MDieciocho</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/02-calle18.jpg" alt="Contención de muro">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo de Muros Calle</p>
+          <p>Dieciocho</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/03-calle18.jpg" alt="Interior de Fachada">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo de Muros Calle</p>
+          <p>Dieciocho</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/04-calle18.jpg" alt="Andamios">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo de Muros Calle</p>
+          <p>Dieciocho</p>
+        </div>
+      </div>
+      <div class="Ligthbox-anterior" id="anterior">&#10094</div>
+      <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
+    </div>`
+
+    const contModal6 = `
+    <div class="Ligthbox-contenedor">
+      <div class="Ligthbox-contenedor-item Ligthbox-actual">
+        <img src="img/01-general-jofre.jpg" alt="Grua">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo General Jofré</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/02-general-jofre.jpg" alt="Pilares de contencion">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo General Jofré</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/03-general-jofre.jpg" alt="Malla Acme">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo General Jofré</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/04-general-jofre.jpg" alt="Malla contencion">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo General Jofré</p>
+        </div>
+      </div>
+      <div class="Ligthbox-anterior" id="anterior">&#10094</div>
+      <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
+    </div>`
+
+    const contModal7 = `
+    <div class="Ligthbox-contenedor">
+      <div class="Ligthbox-contenedor-item Ligthbox-actual">
+        <img src="img/01-alameda.jpg" alt="Andamios">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo de Muros Alameda</p>
+          <p>Montaje de Altillos</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/02-alameda.jpg" alt="Contencion en Fierro">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo de Muros Alameda</p>
+          <p>Montaje de Altillo</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/03-alameda.jpg" alt="Andamio">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo de Muros Alameda</p>
+          <p>Montaje de Altillo</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/04-alameda.jpg" alt="Obra">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Refuerzo de Muros Alameda</p>
+          <p>Montaje de Altillo</p>
+        </div>
+      </div>
+      <div class="Ligthbox-anterior" id="anterior">&#10094</div>
+      <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
+    </div>`
+
+    const contModal8 = `
+    <div class="Ligthbox-contenedor">
+      <div class="Ligthbox-contenedor-item Ligthbox-actual">
+        <img src="img/01-damian.jpg" alt="Montaje Techo">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Casa San Damián Las Condes</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/02-damian.jpg" alt="Terraza techada">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Casa San Damián Las Condes</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/03-damian.jpg" alt="Pilares">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Casa San Damián Las Condes</p>
+        </div>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/04-damian.jpg" alt="Hombres trabajando">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Casa San Damián Las Condes</p>
+        </div>
+      </div>
+      <div class="Ligthbox-anterior" id="anterior">&#10094</div>
+      <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
+    </div>`
+
+  const contModal9 = `
+    <div class="Ligthbox-contenedor">
+      <div class="Ligthbox-contenedor-item Ligthbox-actual">
+        <img src="img/01-iglesia.jpg" alt="Terraza">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Iglesia Cristiana Las Condes</p>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/02-iglesia.jpg" alt="Estructura Techo">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Iglesia Cristiana Las Condes</p>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/03-iglesia.jpg" alt="Ventanales">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Iglesia Cristiana Las Condes</p>
+      </div>
+      <div class="Ligthbox-contenedor-item">
+        <img src="img/04-iglesia.jpg" alt="Techumbre">
+        <div class="Ligthbox-contenedor-item-text">
+          <p>Iglesia Cristiana Las Condes</p>
+      </div>
+      <div class="Ligthbox-anterior" id="anterior">&#10094</div>
+      <div class="Ligthbox-siguiente" id="siguiente">&#10095</div>
+    </div>`
 
   modal1.addEventListener('click', () => {
     printModal(`${contModal1}`)
@@ -300,6 +380,21 @@ const galeriaModal = function modalGaleria(){
 
   modal6.addEventListener('click', () => {
     printModal(`${contModal6}`)
+    document.body.appendChild(j)
+  })
+
+  modal7.addEventListener('click', () => {
+    printModal(`${contModal7}`)
+    document.body.appendChild(j)
+  })
+
+  modal8.addEventListener('click', () => {
+    printModal(`${contModal8}`)
+    document.body.appendChild(j)
+  })
+
+  modal9.addEventListener('click', () => {
+    printModal(`${contModal9}`)
     document.body.appendChild(j)
   })
 }
